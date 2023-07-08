@@ -1,0 +1,31 @@
+@import '~bootstrap/scss/bootstrap';
+
+.footer {
+  // position: absolute;
+  bottom: 0%;
+  background-color: $gray-100;
+  color: $gray-900;
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  p{
+    font-size: 1.3em;
+  }
+  .footer-wraper {
+    .footer__logo {
+      img{
+        width: 100px;
+      }
+    }
+    .link {
+      display: inline-block;
+      &:hover {
+        position: relative;
+        top: -1px;
+        color: $gray-700;
+        cursor: pointer;
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+@import '~bootstrap/scss/bootstrap';
+@import './abstracts/variables';
+@import './base/_reset.scss';
+@import './base/typography';
+
+body {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  font-family: 'Arimo';
+  font-weight: 400;
+}
+
+.content-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
