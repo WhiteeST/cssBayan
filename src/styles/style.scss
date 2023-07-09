@@ -12,9 +12,59 @@ body {
 }
 
 .content-container {
-  min-height: 100vh;
+  margin: 0 auto;
+  padding: 5vh 5vw 0;
+  width: 80%;
+  // min-height: 100vh;
+}
+
+.memes-list {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+  // align-items: center;
+  justify-content: center;
+
+}
+
+.memes-list_item {
+  margin-top: 5px;
+
+  img {
+    display: none;
+    width: 60%;
+    margin: 0 auto;
+
+    // &:active {
+    //   display: block;
+    // }
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: rgb(117, 117, 117);
+    margin-top: 5px;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:hover img {
+    display: block;
+  }
+
+}
+
+.h1-title {
+  font-size: 3rem;
+
+  &::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: rgb(117, 117, 117);
+    margin-top: 5px;
+  }
 }
